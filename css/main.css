@@ -1,0 +1,116 @@
+body {
+  background-color: #7c6666;
+  padding: 60px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.reset-button {
+  padding: 10px;
+  background-color: wheat;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font: 600 16px/1em sans-serif;
+}
+
+.reset-button:active {
+  background-color: rgb(237, 218, 180);
+  border: 1px solid black;
+}
+
+.description {
+  text-align: right;
+}
+
+.description__title {
+  font: 600 32px/1 sans-serif;
+  color: wheat;
+}
+
+.description__subtitle {
+  font-size: 18px;
+  color: whitesmoke;
+}
+
+.game-field {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  height: 40vh;
+  width: 40vh;
+  padding: 20px;
+  background-color: wheat;
+  border-radius: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.game-field--blocked {
+  pointer-events:none;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32%;
+  height: 32%;
+  background-color: #7c6666;
+  border-radius: 10px;
+  color: whitesmoke;
+  font-size: 36px;
+}
+
+.cell:active {
+  border: 2px solid black;
+  background-color: #6e5c5c;
+}
+
+.game-result {
+  text-align: center;
+  font: 600 32px/1 sans-serif;
+  color: wheat;
+}
+
+.score-table {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-size: 20px;
+  background-color: wheat;
+  padding: 10px 20px;
+  position: relative;
+  border-radius: 20px;
+  max-width: 400px;
+}
+
+.properies-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.properties-list__item {
+  text-align: center;
+}
+.score-name {
+  margin-bottom: 20px;
+  font: 600 20px/1 sans-serif;
+}
+.score-value {
+  color: #6e5c5c;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.divider-line {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #6e5c5c;
+  left: 0;
+  top: 45px;
+}

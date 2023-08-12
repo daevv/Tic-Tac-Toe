@@ -8,10 +8,37 @@
   <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
+
+  <header>
+    <button class="reset-button">Reset Game</button>
+    <div class="description">
+      <h1 class="description__title">Tic-Tac-Toe</h1>
+      <h2 class="description__subtitle">by daevv</h2>
+    </div>
+  </header>
+
+  <div class="game-field">
+  </div>
   
-
-
-
+  <div class="score-table">
+    <hr class="divider-line">
+    <ul class="properies-list list">
+      <li class="properties-list__item">
+        <p class="score-name">Total</p>
+        <p class="score-value total">0</p>
+      </li>
+      <li class="properties-list__item">
+        <p class="score-name">Xwins</p>
+        <p class="score-value xWins">0</p>
+      </li>
+      <li class="properties-list__item">
+        <p class="score-name">Owins</p>
+        <p class="score-value oWins">0</p>
+      </li>
+    </ul>
+  </div>
+  
+  <h2 class="game-result"></h2>
   <script type="module" src="./js/main.js"></script>
 </body>
 </html>
