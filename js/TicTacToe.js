@@ -63,7 +63,7 @@ export class TicTacToe {
       return;
     }
     this.pressed.push(id);
-    if (this.isXturn) {
+    if (this.isXTurn) {
       evt.target.textContent = 'X';
       this.xSteps.push(id);
       if (TicTacToe.winCombinations.some((winCombination) => winCombination.every((cell) => this.xSteps.includes(cell)))) {
@@ -83,7 +83,7 @@ export class TicTacToe {
       this.endGame('');
       return;
     }
-    this.isXturn = !this.isXturn;
+    this.isXTurn = !this.isXTurn;
   };
 
   startGame = () => {
